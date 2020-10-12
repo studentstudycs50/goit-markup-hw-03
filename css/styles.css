@@ -1,0 +1,249 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --hero-text-color: #ffffff;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --primary-bg-color: #ffffff;
+  --second-bg-color: #2f303a;
+  --third-bg-color: #e5e5e5;
+  --forth-bg-color: #f5f4fa;
+}
+
+/* цвет основного текста color: #757575; */
+/* цвет вторичного текста color: #212121;*/
+
+/* цвет текста и шапки color: #FFFFFF;*/
+
+/* подвал названия тел. адрес color: rgba(255, 255, 255, 0.6);*/
+
+/* цвет фона 1 шапка background: #FFFFFF;*/
+/* цвет фона 2 подвал background: #2F303A; */
+/* цвет фона main 3 background: #E5E5E5;*/
+/* цвет фона 4 вторичный background: #F5F4FA; */
+
+/* LOGO  color: акцент #2196F3; +color: #212121; */
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--third-bg-color);
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/*убираем точки слева*/
+ul {
+  list-style: none;
+}
+
+/* top line */
+/*спросить: почему если убрать класс .nav, то text-decoration: none; не работает?*/
+.nav {
+  text-decoration: none;
+}
+.header-decor {
+  background-color: var(--primary-bg-color);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.nav .accent-logo {
+  color: var(--accent-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.nav .logo {
+  color: var(--title-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+/*настройка слова Studio в футере */
+.logotip {
+  color: var(--hero-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav .link {
+  color: var(--title-text-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-text-color);
+}
+.site-nav .link.current {
+  color: var(--accent-text-color);
+}
+
+.navigation .link {
+  color: var(--primary-text-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  font-style: normal;
+}
+.navigation .link:hover,
+.navigation .link:focus {
+  color: var(--accent-text-color);
+}
+.navigation .link.current {
+  color: var(--accent-text-color);
+}
+
+/* */
+.heading {
+  background-color: var(--second-bg-color);
+}
+.color-white {
+  color: var(--hero-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+/*button studio*/
+.button-studio {
+  color: var(--hero-text-color);
+  background-color: var(--accent-text-color);
+  font-weight: 700;
+
+  font-size: 16px;
+  line-height: 1.87;
+  border: 0px;
+  border-radius: 4px;
+  padding: 10px 32px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* benefits of cooperation */
+.features .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+}
+/*задаем верхний отступ*/
+.benefits {
+  margin-top: 94px;
+}
+
+/*about our work container*/
+
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.6;
+  text-align: center;
+}
+.team {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+.desc {
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+/*footer*/
+.footer {
+  background-color: var(--second-bg-color);
+  text-decoration: none;
+  list-style: none;
+}
+.footer-addr {
+  color: var(--hero-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+}
+.footer-link {
+  color: var(--footer-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+  list-style: none;
+}
+.text-elem {
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+/*button portfolio*/
+.button {
+  color: var(--title-text-color);
+  background-color: var(--forth-bg-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+.button .but:hover,
+.button .but:focus {
+  color: var(--hero-text-color);
+  background-color: var(--accent-text-color);
+}
+.button.primary {
+  color: var(--hero-text-color);
+  background-color: var(--accent-text-color);
+}
+
+.but {
+  border: 0px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 6px 22px;
+}
+
+/*стилизация шапки сайта, придание цвета фону*/
+
+.link {
+  display: inline;
+  padding: 20px 40px;
+}
+
+.header-dec {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: var(--primary-bg-color);
+}
+.links-main {
+  margin: 0;
+  padding: 0;
+}
