@@ -6,7 +6,7 @@
   --footer-text-color: rgba(255, 255, 255, 0.6);
   --primary-bg-color: #ffffff;
   --second-bg-color: #2f303a;
-  --third-bg-color: #e5e5e5;
+  --third-bg-color: rgba(255, 255, 255, 1);
   --forth-bg-color: #f5f4fa;
 }
 
@@ -47,6 +47,8 @@ ul {
   margin-bottom: 0px;
 }
 
+/* ==================== LOGOTIP===================*/
+
 .nav .accent-logo {
   color: var(--accent-text-color);
   font-family: Raleway, sans-serif;
@@ -72,18 +74,24 @@ ul {
   line-height: 1.19;
   text-decoration: none;
 }
+/* ====================END LOGOTIP===================*/
+
+/* ======================TOP LINE=====================*/
 .list {
   margin: 0;
   padding: 0;
 }
 
 .site-nav .link {
+  display: block;
   color: var(--title-text-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav .link:hover,
@@ -110,11 +118,15 @@ ul {
 .navigation .link.current {
   color: var(--accent-text-color);
 }
+/* ====================END TOP LINE===================*/
 
 /* */
 .heading {
   background-color: var(--second-bg-color);
+  height: 600px;
 }
+
+/* ==================== HEADER===================*/
 .color-white {
   color: var(--hero-text-color);
   font-weight: 900;
@@ -123,7 +135,10 @@ ul {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
+  padding-top: 200px;
+  padding-bottom: 280px;
 }
+
 /*button studio*/
 .button-studio {
   color: var(--hero-text-color);
@@ -139,48 +154,183 @@ ul {
   margin-top: 30px;
 }
 
-/* benefits of cooperation */
+/*стилизация шапки сайта, придание цвета фону*/
+
+.header-dec {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: var(--primary-bg-color);
+  width: 1200px;
+}
+.links-main {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+/*====================СТИЛИ ДЛЯ ГЕОМЕТРИИ КОНТЕНТА ШАПКИ================= */
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+/*чистим крайнюю геометрию(убираем отступ справа у последнего элемента )
+.site-nav .item:last-child {
+  margin-right: 0;
+} 
+OR
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+  }*/
+
+.links-main .links + .links {
+  margin-left: 50px;
+}
+.links-main {
+  display: flex;
+}
+
+.navigation {
+  margin-left: auto;
+}
+
+.links-main .item + .item {
+  margin-left: 50px;
+}
+
+.main-div {
+  display: flex;
+  align-items: center;
+}
+
+/*====================END СТИЛИ ДЛЯ ГЕОМЕТРИИ КОНТЕНТА ШАПКИ================= */
+
+/* ====================END HEADER===================*/
+
+/* ====================  benefits of cooperation===================*/
+.benefits {
+  margin: 0;
+  padding: 0;
+  margin-top: 94px;
+}
+
 .features .title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+.benefits .title + .title {
+  margin-left: 30px;
+}
+.benefits .title {
+  padding-bottom: 10px;
 }
 .features .text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
-
   letter-spacing: 0.03em;
+  margin: 0;
+  padding: 0;
 }
+.text {
+  width: 270px;
+  height: 75px;
+}
+.bgc-benef {
+  background-color: var(--third-bg-color);
+  margin: 0;
+  padding: 0;
+}
+.features {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
 /*задаем верхний отступ*/
-.benefits {
-  margin-top: 94px;
+
+/* ====================END  benefits of cooperation===================*/
+
+/* ==================== about our team container===================*/
+.bgc-our-team {
+  background-color: var(--forth-bg-color);
+}
+.what-we-do-ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.what-we-do-ul .what-we-do-li + .what-we-do-li {
+  margin-left: 30px;
+}
+.what-we-do-li {
+  padding-bottom: 94px;
+  padding-top: 50px;
 }
 
-/*about our work container*/
-
+.our-team-ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.our-team-ul .our-team-li + .our-team-li {
+  margin-left: 30px;
+}
+.our-team-li {
+  width: 270px;
+  height: 368px;
+  background-color: var(--primary-bg-color);
+  margin-bottom: 94px;
+  margin-top: 50px;
+}
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.6;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 94px;
 }
 .team {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-top: 30px;
 }
 .desc {
   font-size: 16px;
   line-height: 1.18;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
+/* ====================END about our team container===================*/
 
 /*footer*/
+.foot-main {
+  margin: 0;
+  padding: 0;
+}
 .footer {
   background-color: var(--second-bg-color);
   text-decoration: none;
@@ -203,11 +353,24 @@ ul {
   font-size: 16px;
   line-height: 1.87;
 }
+.footer-li {
+  padding-top: 9px;
+}
+.footer-tel {
+  padding-bottom: 60px;
+  padding-top: 9px;
+}
+.decor-footer {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+/* ====================END FOOTER===================*/
 
-/*button portfolio*/
+/*=====================button portfolio======================*/
+
 .button {
   color: var(--title-text-color);
-  background-color: var(--forth-bg-color);
+  background-color: var(--third-bg-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -231,19 +394,50 @@ ul {
   padding: 6px 22px;
 }
 
-/*стилизация шапки сайта, придание цвета фону*/
-
-.link {
-  display: inline;
-  padding: 20px 40px;
+.button-section .button {
+  display: flex;
+  padding-top: 94px;
+  justify-content: center;
+  padding-bottom: 50px;
 }
+.button .title + .title {
+  margin-left: 8px;
+}
+
+/*=====================END button portfolio======================*/
+
+/*=========================PORTFOLIO============================*/
+
+.features .features-li + .features-li {
+  margin-left: 30px;
+}
+
+.features-li {
+  background-color: var(--primary-bg-color);
+  width: 370px;
+  height: 404px;
+  margin-top: 30px;
+}
+
+.features-li .title {
+  padding-top: 20px;
+}
+.features-li .text-elem {
+  padding-top: 4px;
+  padding-bottom: 20px;
+}
+
+.text-elem {
+  margin: 0;
+  padding: ;
+}
+
+.features {
+  flex-wrap: wrap;
+}
+
+/*=========================PORTFOLIO============================*/
 
 .header-dec {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  background-color: var(--primary-bg-color);
-}
-.links-main {
-  margin: 0;
-  padding: 0;
+  width: 1200px;
 }
