@@ -1,20 +1,14 @@
 * {
   padding: 0;
   margin: 0;
-  border: 0;
+  
 }
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
-:focus,
-:active {
-  outline: none;
-}
-a:focus,
-a:active {
-  outline: none;
+
 }
 nav,
 footer,
@@ -22,53 +16,8 @@ header,
 aside {
   display: block;
 }
-html,
-body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-input,
-button,
-textarea {
-  font-family: inherit;
-}
-input::-ms-clear {
-  display: none;
-}
-button {
-  cursor: pointer;
-}
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-a,
-a:visited,
-a:hover {
-  text-decoration: none;
-}
-ul,
-li {
-  list-style: none;
-}
-img {
-  vertical-align: top;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: 400;
-}
+
+
 
 img {
   display: block;
@@ -94,6 +43,7 @@ ul {
   --second-bg-color: #2f303a;
   --third-bg-color: rgba(255, 255, 255, 1);
   --forth-bg-color: #f5f4fa;
+  --line: #ececec;
 }
 
 /* цвет основного текста color: #757575; */
@@ -119,7 +69,16 @@ ul {
   background-color: var(--primary-bg-color);
   margin-top: 0px;
   margin-bottom: 0px;
+  
 }
+  
+  .main-div{
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--line);
+
+}
+ 
 
 /* ==================== LOGOTIP===================*/
 
@@ -207,7 +166,7 @@ ul {
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
-  margin: 0;
+
   margin-bottom: 30px;
 }
 
@@ -229,13 +188,6 @@ ul {
 }
 
 /*стилизация шапки сайта, придание цвета фону*/
-
-.header-dec {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  background-color: var(--primary-bg-color);
-  width: 1200px;
-}
 
 .container {
   margin-left: auto;
@@ -275,7 +227,7 @@ OR
 }
 
 .links-main .item + .item {
-  margin-left: 50px;
+  padding-left: 50px;
 }
 
 .main-div {
@@ -289,7 +241,7 @@ OR
 
 /* ====================  benefits of cooperation===================*/
 .benefits {
-  margin-top: 94px;
+  padding-top: 94px;
 }
 
 .features .title {
@@ -303,7 +255,7 @@ OR
   margin-left: 30px;
 }
 .benefits .title {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .features .text {
   font-weight: 400;
@@ -321,6 +273,11 @@ OR
 .features {
   display: flex;
 }
+.benefits{
+  width: 270px;
+  height: 368px;
+  padding-bottom: 94px;
+}
 
 /*задаем верхний отступ*/
 
@@ -334,7 +291,7 @@ OR
   display: flex;
 }
 .what-we-do-ul .what-we-do-li + .what-we-do-li {
-  margin-left: 30px;
+  padding-left: 30px;
 }
 .what-we-do-li {
   padding-bottom: 94px;
@@ -345,7 +302,7 @@ OR
   display: flex;
 }
 .our-team-ul .our-team-li + .our-team-li {
-  margin-left: 30px;
+   margin-left: 30px;
 }
 .our-team-li {
   width: 270px;
@@ -368,14 +325,14 @@ OR
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  padding-top: 30px;
+  margin-top: 30px;
 }
 .desc {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 /* ====================END about our team container===================*/
 
@@ -385,13 +342,23 @@ OR
   background-color: var(--second-bg-color);
   text-decoration: none;
   list-style: none;
+  
+  
 }
 .footer-addr {
   color: var(--hero-text-color);
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
+  box-sizing: border-box;
+  height: 172px;
+  
 }
+.footer-main{
+padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer-link {
   color: var(--footer-text-color);
   font-size: 14px;
@@ -404,26 +371,45 @@ OR
   line-height: 1.87;
 }
 .footer-li {
-  padding-top: 9px;
+  margin-top: 9px;
 }
-.footer-tel {
+/*.footer-tel {
   padding-bottom: 60px;
   padding-top: 9px;
-}
+   padding-top: 60px;
 .decor-footer {
   padding-top: 60px;
   padding-bottom: 20px;
 }
+
+}*/
+.decor-footer {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
 /* ====================END FOOTER===================*/
 
 /*=====================button portfolio======================*/
 
-.button {
-  color: var(--title-text-color);
-  background-color: var(--third-bg-color);
+/**/
+
+.but {
+  display: block;
+  font-family: inherit;
   font-weight: 500;
+  color: var(--title-text-color);
+  
+  
   font-size: 16px;
   line-height: 1.6;
+  text-decoration: none;
+  
+  border: 0px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 6px 22px;
+
 }
 .button .but:hover,
 .button .but:focus {
@@ -433,13 +419,6 @@ OR
 .button.primary {
   color: var(--hero-text-color);
   background-color: var(--accent-text-color);
-}
-
-.but {
-  border: 0px;
-  text-align: center;
-  border-radius: 4px;
-  padding: 6px 22px;
 }
 
 .button-section .button {
@@ -452,34 +431,79 @@ OR
   margin-left: 8px;
 }
 
+
+
 /*=====================END button portfolio======================*/
 
 /*=========================PORTFOLIO============================*/
 
-.features .features-li + .features-li {
-  margin-left: 30px;
+.features .title{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  text-transform: inherit;
 }
 
-.features-li {
+/*задаем полоску под шапкой*/
+.line-header{
+  border-bottom: 1px;
+}
+
+/*.features .features-li + .features-li {
+  margin-left: 30px;
+}*/
+
+.features{
+  display: flex;
+  flex-wrap: wrap;
+}
+.features-li{
+  display: inline-block;
+  width: 370px;
+  height: 404px;
+  background-color: var(--primary-bg-color);
+  
+
+  
+}
+.features-li:not(:nth-child(3n)){
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.features-li:nth-child(7){
+  margin-bottom: 94px;
+}
+
+
+
+/*.our-team-li {
+  
+  margin-bottom: 94px;
+  margin-top: 50px;
+}*/
+
+/*.features-li {
   background-color: var(--primary-bg-color);
   width: 370px;
   height: 404px;
   margin-top: 30px;
-  margin-left: auto;
+   margin-left: auto;
   margin-right: auto;
 }
+*/
 
 .features-li .title {
-  padding-top: 20px;
+  margin-top: 20px;
+  margin-right: 24px;
+  margin-left: 24px;
 }
 .features-li .text-elem {
-  padding-top: 4px;
-  padding-bottom: 20px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  margin-left: 24px;
 }
 
-.features {
-  flex-wrap: wrap;
-}
 
 /*=========================PORTFOLIO============================*/
 
