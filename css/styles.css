@@ -273,11 +273,7 @@ OR
 .features {
   display: flex;
 }
-.benefits{
-  width: 270px;
-  height: 368px;
-  padding-bottom: 94px;
-}
+
 
 /*задаем верхний отступ*/
 
@@ -409,6 +405,7 @@ padding-top: 60px;
   text-align: center;
   border-radius: 4px;
   padding: 6px 22px;
+  /*margin-bottom: 50px;*/
 
 }
 .button .but:hover,
@@ -474,6 +471,7 @@ padding-top: 60px;
 .features-li:nth-child(7){
   margin-bottom: 94px;
 }
+
 
 
 
