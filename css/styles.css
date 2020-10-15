@@ -240,7 +240,7 @@ OR
 /* ====================END HEADER===================*/
 
 /* ====================  benefits of cooperation===================*/
-.benefits {
+.main-features {
   padding-top: 94px;
 }
 
@@ -282,6 +282,8 @@ OR
 /* ==================== about our team container===================*/
 .bgc-our-team {
   background-color: var(--forth-bg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .what-we-do-ul {
   display: flex;
@@ -289,9 +291,13 @@ OR
 .what-we-do-ul .what-we-do-li + .what-we-do-li {
   padding-left: 30px;
 }
-.what-we-do-li {
+/*.what-we-do-li {
   padding-bottom: 94px;
   padding-top: 50px;
+}*/
+.about-work-section{
+  padding-top: 94px;
+  margin-bottom: 94px;
 }
 
 .our-team-ul {
@@ -304,8 +310,8 @@ OR
   width: 270px;
   height: 368px;
   background-color: var(--primary-bg-color);
-  margin-bottom: 94px;
-  margin-top: 50px;
+  
+  
 }
 .section-title {
   color: var(--title-text-color);
@@ -313,7 +319,9 @@ OR
   font-size: 36px;
   line-height: 1.6;
   text-align: center;
-  padding-top: 94px;
+  margin-bottom: 50px;
+  
+  
 }
 .team {
   color: var(--title-text-color);
@@ -321,14 +329,18 @@ OR
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  margin-top: 30px;
+  
 }
 .desc {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  padding-top: 10px;
+  
+}
+.team-padding{
+padding-top: 30px;
+padding-bottom: 30px;
 }
 /* ====================END about our team container===================*/
 
@@ -518,7 +530,7 @@ padding-top: 60px;
 .features-li .text-elem {
   margin-top: 4px;
   margin-bottom: 20px;
-  margin-left: 24px;
+  зфввш-left: 24px;
 }
 
 
