@@ -76,7 +76,7 @@ ul {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: var(--line);
-  margin-bottom: 94px;
+  
   }
 
  
@@ -462,16 +462,21 @@ padding-top: 60px;
   background-color: var(--accent-text-color);
 }
 
-.button-section .button {
+.buttons-section .button {
   display: flex;
   
   justify-content: center;
   padding-bottom: 50px;
+
 }
 .button .title + .title {
   margin-left: 8px;
 }
 
+.buttons-section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /*=====================END button portfolio======================*/
 
 /*=========================PORTFOLIO============================*/
@@ -519,12 +524,10 @@ padding-top: 60px;
  
 }
 .features-li:not(:nth-child(3n)){
-  margin-right: 30px;
-  margin-bottom: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
 }
-.features-li:nth-child(7){
-  margin-bottom: 94px;
-}
+
 
 /*.our-team-li {
   
