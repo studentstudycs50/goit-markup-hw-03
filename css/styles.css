@@ -347,9 +347,13 @@ OR
   line-height: 1.71;
   font-style: normal;
   box-sizing: border-box;
-  height: 198px;
-  
+  height: 172px;
 }
+
+/*.footer-main{
+padding-top: 60px;
+  padding-bottom: 60px;
+}*/
 
 
 .footer-link {
@@ -368,11 +372,16 @@ OR
 .footer-li {
   margin-top: 9px;
 }
+.decor-footer{
+  padding-top: 60px;
+}
+
 
 .footer-addr:not(:nth-child(3n)){
-  margin-top: 60px;
-  margin-bottom: 60px;
+  
+  padding-bottom: 60px;
 }
+
 /*.footer-tel {
   padding-bottom: 60px;
   padding-top: 9px;
