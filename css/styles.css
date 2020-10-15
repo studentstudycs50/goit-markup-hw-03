@@ -347,13 +347,10 @@ OR
   line-height: 1.71;
   font-style: normal;
   box-sizing: border-box;
-  height: 172px;
+  height: 198px;
   
 }
-.footer-main{
-padding-top: 60px;
-  padding-bottom: 60px;
-}
+
 
 .footer-link {
   color: var(--footer-text-color);
@@ -361,6 +358,8 @@ padding-top: 60px;
   line-height: 1.71;
   text-decoration: none;
   list-style: none;
+  box-sizing: border-box;
+
 }
 .text-elem {
   font-size: 16px;
@@ -368,6 +367,11 @@ padding-top: 60px;
 }
 .footer-li {
   margin-top: 9px;
+}
+
+.footer-addr:not(:nth-child(3n)){
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 /*.footer-tel {
   padding-bottom: 60px;
@@ -378,11 +382,14 @@ padding-top: 60px;
   padding-bottom: 20px;
 }
 
-}*/
+}
 .decor-footer {
   padding-top: 60px;
   padding-bottom: 20px;
 }
+
+
+*/
 
 /* ====================END FOOTER===================*/
 
