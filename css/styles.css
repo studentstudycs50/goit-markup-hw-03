@@ -351,8 +351,12 @@ OR
   
 }
 .team-padding{
+border: 1px solid var(--line);
 padding-top: 30px;
 padding-bottom: 30px;
+
+height: 108px;
+width: 270px;
 }
 /* ====================END about our team container===================*/
 
@@ -466,10 +470,7 @@ padding-top: 60px;
 .button .title + .title {
   margin-left: 8px;
 }
-.button-studio{
- margin-top: 94px;
- padding-bottom: 50px;
- }
+
 /*=====================END button portfolio======================*/
 
 /*=========================PORTFOLIO============================*/
@@ -496,9 +497,7 @@ padding-top: 60px;
 }
 
 
-.features-li:nth-child(7){
-  margin-bottom: 94px;
-}
+
 
 .text-elem {
   font-size: 16px;
@@ -521,6 +520,9 @@ padding-top: 60px;
 .features-li:not(:nth-child(3n)){
   margin-right: 30px;
   margin-bottom: 30px;
+}
+.features-li:nth-child(7){
+  margin-bottom: 94px;
 }
 
 /*.our-team-li {
