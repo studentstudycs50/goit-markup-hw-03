@@ -72,13 +72,28 @@ ul {
   
 }
   
-  .main-div{
+  .border-for-header{
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: var(--line);
+  margin-bottom: 94px;
+  }
+
+ 
+  .main-div {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+} 
+.main-nav{
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 
 }
- 
+
+
+
 
 /* ==================== LOGOTIP===================*/
 
@@ -230,10 +245,7 @@ OR
   padding-left: 50px;
 }
 
-.main-div {
-  display: flex;
-  align-items: center;
-}
+
 
 /*====================END СТИЛИ ДЛЯ ГЕОМЕТРИИ КОНТЕНТА ШАПКИ================= */
 
@@ -297,14 +309,14 @@ OR
 }*/
 .about-work-section{
   padding-top: 94px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .our-team-ul {
   display: flex;
 }
 .our-team-ul .our-team-li + .our-team-li {
-   margin-left: 30px;
+   padding-left: 30px;
 }
 .our-team-li {
   width: 270px;
@@ -319,7 +331,7 @@ OR
   font-size: 36px;
   line-height: 1.6;
   text-align: center;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   
   
 }
@@ -352,7 +364,8 @@ padding-bottom: 30px;
   list-style: none;
   box-sizing: border-box;
   height: 252px;
-  
+  padding-top: 60px;
+  padding-bottom: 60px;
   
 }
 .footer-addr {
@@ -360,7 +373,7 @@ padding-bottom: 30px;
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
-  margin-bottom: 60px;
+ 
 }
 .footer-link {
   color: var(--footer-text-color);
@@ -372,9 +385,7 @@ padding-bottom: 30px;
 /*здесь стоит паддинг
  потому что если поставить марджин добавляеется
   отспуп сверху(пустой)*/
-.decor-footer {
- padding-top: 60px;
-}
+
 
 .footer-li:first-child{
   margin-top: 20px;
@@ -448,16 +459,17 @@ padding-top: 60px;
 
 .button-section .button {
   display: flex;
-  padding-top: 94px;
+  
   justify-content: center;
   padding-bottom: 50px;
 }
 .button .title + .title {
   margin-left: 8px;
 }
-
-
-
+.button-studio{
+ margin-top: 94px;
+ padding-bottom: 50px;
+ }
 /*=====================END button portfolio======================*/
 
 /*=========================PORTFOLIO============================*/
@@ -482,19 +494,7 @@ padding-top: 60px;
   display: flex;
   flex-wrap: wrap;
 }
-.features-li{
-  display: inline-block;
-  width: 370px;
-  height: 404px;
-  background-color: var(--primary-bg-color);
-  
 
-  
-}
-.features-li:not(:nth-child(3n)){
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
 
 .features-li:nth-child(7){
   margin-bottom: 94px;
@@ -504,7 +504,24 @@ padding-top: 60px;
   font-size: 16px;
   line-height: 1.87;
 }
-
+.border-for-cards{
+  display: inline-block;
+  border: 1px solid var(--line);
+  width: 370px;
+  height: 110px;
+  background-color: var(--primary-bg-color);
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+ 
+  
+ 
+}
+.features-li:not(:nth-child(3n)){
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
 
 /*.our-team-li {
   
@@ -522,16 +539,7 @@ padding-top: 60px;
 }
 */
 
-.features-li .title {
-  margin-top: 20px;
-  margin-right: 24px;
-  margin-left: 24px;
-}
-.features-li .text-elem {
-  margin-top: 4px;
-  margin-bottom: 20px;
-  зфввш-left: 24px;
-}
+
 
 
 /*=========================PORTFOLIO============================*/
