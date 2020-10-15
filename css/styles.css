@@ -318,13 +318,13 @@ OR
 .our-team-ul .our-team-li + .our-team-li {
    padding-left: 30px;
 }
-.our-team-li {
+/*.our-team-li {
   width: 270px;
   height: 368px;
   background-color: var(--primary-bg-color);
   
   
-}
+}*/
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -352,6 +352,7 @@ OR
 }
 .team-padding{
 border: 1px solid var(--line);
+background-color: var(--third-bg-color);
 padding-top: 30px;
 padding-bottom: 30px;
 
