@@ -481,11 +481,12 @@ padding-top: 60px;
 
 /*=========================PORTFOLIO============================*/
 
-.features .title{
+.features .titles{
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
   text-transform: inherit;
+  color: var(--title-text-color);
 }
 
 /*задаем полоску под шапкой*/
